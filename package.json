@@ -19,9 +19,12 @@
     "url": "git+https://github.com/twinh/gitsync.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
     "@gitsync/sync": "^0.1.0"
+  },
+  "devDependencies": {
+    "@gitsync/test": "^0.1.0"
   }
 }
