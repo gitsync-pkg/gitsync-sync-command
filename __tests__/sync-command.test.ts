@@ -16,7 +16,7 @@ describe('sync command', () => {
 
     await runCommand(sync, source, {
       target: target.dir,
-      sourcePath: '.',
+      sourceDir: '.',
     });
 
     expect(fs.existsSync(target.getFile('test.txt'))).toBe(true);

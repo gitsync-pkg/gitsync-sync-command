@@ -6,7 +6,7 @@ let command: CommandModule = {
   }
 };
 
-command.command = 'sync <target> <source-path> [target-path]';
+command.command = 'sync <target> <source-dir> [target-dir]';
 
 command.describe = '将当前仓库子目录的提交记录同步到另一个仓库';
 
@@ -14,10 +14,10 @@ command.builder = {
   target: {
     describe: '要同步过去的目标仓库目录',
   },
-  'source-path': {
+  'source-dir': {
     describe: '当前仓库中，要同步的目录',
   },
-  'target-path': {
+  'target-dir': {
     describe: '目标仓库中,要同步的目录',
     default: '.'
   },
