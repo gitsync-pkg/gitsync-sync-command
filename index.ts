@@ -25,6 +25,10 @@ command.builder = {
     describe: '要同步的分支,默认为全部，多个使用空格隔开',
     default: '*',
   },
+  'filter-tags': {
+    describe: 'Limit tags with names matching the given glob',
+    type: 'array',
+  },
   'no-tags': {
     describe: '是否同步标签',
     default: false,
