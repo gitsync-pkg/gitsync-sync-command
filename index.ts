@@ -21,9 +21,15 @@ command.builder = {
     describe: '目标仓库中,要同步的目录',
     default: '.'
   },
-  branches: {
-    describe: '要同步的分支,默认为全部，多个使用空格隔开',
-    default: '*',
+  'include-branches': {
+    describe: 'Include only branch with names matching the given glob',
+    default: [],
+    type: 'array',
+  },
+  'exclude-branches': {
+    describe: 'Exclude branch with names matching the given glob',
+    default: [],
+    type: 'array',
   },
   'filter-tags': {
     describe: 'Limit tags with names matching the given glob',
