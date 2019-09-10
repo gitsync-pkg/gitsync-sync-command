@@ -31,6 +31,16 @@ command.builder = {
     default: [],
     type: 'array',
   },
+  'include-tags': {
+    describe: 'Include only tag with names matching the given glob',
+    default: [],
+    type: 'array',
+  },
+  'exclude-tags': {
+    describe: 'Exclude tag with names matching the given glob',
+    default: [],
+    type: 'array',
+  },
   'filter-tags': {
     describe: 'Limit tags with names matching the given glob',
     type: 'array',
