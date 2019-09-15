@@ -39,7 +39,7 @@
     "typescript": "^3.5.3"
   },
   "ciDependencies": {
-    "@gitsync/sync": "gitsync-pkg/gitsync-sync#master",
-    "@gitsync/config": "gitsync-pkg/gitsync-config#master"
+    "@gitsync/sync": "gitsync-pkg/gitsync-sync",
+    "@gitsync/config": "gitsync-pkg/gitsync-config"
   }
 }
