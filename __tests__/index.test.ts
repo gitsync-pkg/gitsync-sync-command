@@ -1,13 +1,15 @@
 import * as fs from 'fs';
-import {createRepo, removeRepos, runCommand} from '@gitsync/test';
+import {RepoManager, runCommand} from '@gitsync/test';
 import sync from '..';
 
-afterAll(() => {
-  removeRepos();
-});
+const {createRepo, removeRepos} = new RepoManager();
 
 // For more tests, please see @gitsync/sync
 describe('sync command', () => {
+  afterAll(async () => {
+    await removeRepos();
+  });
+
   test('run sync', async () => {
     const source = await createRepo();
     await source.commitFile('test.txt');
