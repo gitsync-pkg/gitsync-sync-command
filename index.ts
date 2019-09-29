@@ -63,6 +63,11 @@ command.builder = {
     describe: '同步指定日期之后的记录',
     type: 'string',
   },
+  yes: {
+    describe: 'Whether to skip confirm or not',
+    alias: 'y',
+    type: 'boolean',
+  }
 };
 
 command.handler = (argv: SyncArguments) => {
