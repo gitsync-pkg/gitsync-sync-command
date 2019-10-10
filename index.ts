@@ -41,6 +41,16 @@ command.builder = {
     default: [],
     type: 'array',
   },
+  'add-tag-prefix': {
+    describe: 'Add prefix to tag names before syncing',
+    default: '',
+    type: 'string',
+  },
+  'remove-tag-prefix': {
+    describe: 'Restrict tag names with the specified prefix to sync and remove the prefix before syncing',
+    default: '',
+    type: 'string',
+  },
   'filter-tags': {
     describe: 'Limit tags with names matching the given glob',
     type: 'array',
