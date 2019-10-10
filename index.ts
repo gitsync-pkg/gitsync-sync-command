@@ -51,10 +51,6 @@ command.builder = {
     default: '',
     type: 'string',
   },
-  'filter-tags': {
-    describe: 'Limit tags with names matching the given glob',
-    type: 'array',
-  },
   'no-tags': {
     describe: '是否同步标签',
     default: false,
