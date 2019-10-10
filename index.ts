@@ -69,6 +69,11 @@ command.builder = {
     describe: '同步指定日期之后的记录',
     type: 'string',
   },
+  filter: {
+    describe: 'Pattern used to limit sync paths',
+    default: [],
+    type: 'array',
+  },
   yes: {
     describe: 'Whether to skip confirm or not',
     alias: 'y',
