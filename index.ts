@@ -74,6 +74,11 @@ command.builder = {
     default: [],
     type: 'array',
   },
+  squash: {
+    describe: 'Create only one commit that contains all the new commits',
+    default: false,
+    type: 'boolean',
+  },
   yes: {
     describe: 'Whether to skip confirm or not',
     alias: 'y',
