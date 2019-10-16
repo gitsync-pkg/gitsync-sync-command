@@ -79,6 +79,11 @@ command.builder = {
     default: false,
     type: 'boolean',
   },
+  'squash-base-branch': {
+    describe: 'When squash a new branch, create new branch from this branch',
+    default: 'master',
+    type: 'string',
+  },
   yes: {
     describe: 'Whether to skip confirm or not',
     alias: 'y',
